@@ -3,7 +3,7 @@ class NodoN:
 		self.valor = valor
 		self.hijos = hijos
 	
-def buscar(arbol, valor):
+def buscar_n(arbol, valor):
 	if arbol == None:
 		return False
 	elif arbol.valor == valor:
@@ -15,14 +15,14 @@ def buscar_en_hijos(lista, valor):
 	if lista == []:
 		return False
 	else:
-		return buscar(lista[0], valor) or buscar_en_hijos(lista[1:], valor)
+		return buscar_n(lista[0], valor) or buscar_en_hijos(lista[1:], valor)
 	
 
 arbol = NodoN(10,[NodoN(20,[NodoN(40), NodoN(44)]),
-				  NodoN(50,[NodoN(150)]),
-				  NodoN(100),
-				  NodoN(1000,[NodoN(2000),NodoN(3000),NodoN(5000)])])
+				  NodoN(52,[NodoN(150)]),
+				  NodoN(50),
+				  NodoN(100,[NodoN(250),NodoN(500),NodoN(1000)])])
 
-print (buscar(arbol, 10))
-print (buscar(arbol, 5001))
+print (buscar_n(arbol, 10))
+print (buscar_n(arbol, 1001))
 #print (buscar_en_hijos([],20))
