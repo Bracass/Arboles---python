@@ -32,11 +32,15 @@ def contarHoja(arbol):
     elif arbol.izq == None and arbol.der == None:
         return 1
     return contarHoja(arbol.izq) + contarHoja(arbol.der)
+
+def contarElemento(arbol):
+    if arbol==None:
+        return 0
+    return 1+ contarElemento(arbol.der) + contarElemento(arbol.izq)
             
 def insertar(a,arbol):
     if arbol == None:
         arbol = Nodo(a)
-    
     if  arbol.izq == None and arbol.der == None:
         if a<= arbol.valor:
             arbol.izq = Nodo(a)
@@ -74,4 +78,4 @@ print 'Valor insertado', insertar(16,a1)
 print 'Nodos: ', contarNodo(a1)
 print 'Hojas: ',contarHoja(a1)
 print (preOrden(a1))
-
+print (contarElemento(a1))
