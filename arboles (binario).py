@@ -36,7 +36,7 @@ def contarHoja(arbol):
 def contarElemento(arbol):
     if arbol==None:
         return 0
-    return 1+ contarElemento(arbol.der) + contarElemento(arbol.izq)
+    return 1 + contarElemento(arbol.der) + contarElemento(arbol.izq)
             
 def insertar(a,arbol):
     if arbol == None:
