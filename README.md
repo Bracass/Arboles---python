@@ -2,8 +2,8 @@
 
 ## Integrantes:
 - Sebastian Duque Gallego 20162020039 
-- Brayan Castañeda           20162020
-- K. Alexander Diaz         20162020
+- Brayan Castañeda           201catastral
+- K. Alexander Diaz         20162020105
 
 ## Contenido:
  1. Arbol Binario:
