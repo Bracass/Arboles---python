@@ -2,7 +2,7 @@
 
 ## Integrantes:
 - Sebastian Duque Gallego 20162020039 
-- Brayan Castañeda           201catastral
+- Brayan Castañeda           20162020110
 - K. Alexander Diaz         20162020105
 
 ## Contenido:
